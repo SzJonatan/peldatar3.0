@@ -1,0 +1,102 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Példatár 3.0",
+    "section": "",
+    "text": "Előszó\nA Példatár 3.0 kidolgozott feladatokat tartalmaz teljes levezetéssel.",
+    "crumbs": [
+      "Előszó"
+    ]
+  },
+  {
+    "objectID": "segedlet.html",
+    "href": "segedlet.html",
+    "title": "1  Segédlet",
+    "section": "",
+    "text": "1.1 Megjegyzés\nA példatár írásához használt formátumok. Minden elemnél előbb a forrás, alatta az eredmény látható.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Segédlet</span>"
+    ]
+  },
+  {
+    "objectID": "segedlet.html#megjegyzés",
+    "href": "segedlet.html#megjegyzés",
+    "title": "1  Segédlet",
+    "section": "",
+    "text": "::: {.callout-note}\n## Megjegyzés\nA megjegyzés szövege.\n:::\n\n\n\n\n\n\nNoteMegjegyzés\n\n\n\nA megjegyzés szövege.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Segédlet</span>"
+    ]
+  },
+  {
+    "objectID": "segedlet.html#lenyíló-blokk",
+    "href": "segedlet.html#lenyíló-blokk",
+    "title": "1  Segédlet",
+    "section": "1.2 Lenyíló blokk",
+    "text": "1.2 Lenyíló blokk\n::: {.callout-note collapse=\"true\"}\n## Kattints a megnyitáshoz\nRejtett tartalom, pl. a megoldás.\n:::\n\n\n\n\n\n\nNoteKattints a megnyitáshoz\n\n\n\n\n\nRejtett tartalom, pl. a megoldás.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Segédlet</span>"
+    ]
+  },
+  {
+    "objectID": "segedlet.html#piros-blokk",
+    "href": "segedlet.html#piros-blokk",
+    "title": "1  Segédlet",
+    "section": "1.3 Piros blokk",
+    "text": "1.3 Piros blokk\n::: {.callout-important}\n## Fontos\nPiros keretes, kiemelt figyelmeztetés.\n:::\n\n\n\n\n\n\nImportantFontos\n\n\n\nPiros keretes, kiemelt figyelmeztetés.\n\n\nTovábbi színek:\n\n\n\nOsztály\nSzín\n\n\n\n\n.callout-note\nkék\n\n\n.callout-tip\nzöld\n\n\n.callout-warning\nsárga\n\n\n.callout-caution\nnarancs\n\n\n.callout-important\npiros\n\n\n\nBármelyik lehet lenyíló: {.callout-important collapse=\"true\"}",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Segédlet</span>"
+    ]
+  },
+  {
+    "objectID": "segedlet.html#svg-ábra",
+    "href": "segedlet.html#svg-ábra",
+    "title": "1  Segédlet",
+    "section": "1.4 SVG ábra",
+    "text": "1.4 SVG ábra\n![Ellenállás kapcsolási jele](abrak/minta.svg){#fig-minta width=50%}\n\n\n\n\n\n\nFigure 1.1: Ellenállás kapcsolási jele",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Segédlet</span>"
+    ]
+  },
+  {
+    "objectID": "segedlet.html#egyenletek",
+    "href": "segedlet.html#egyenletek",
+    "title": "1  Segédlet",
+    "section": "1.5 Egyenletek",
+    "text": "1.5 Egyenletek\nSzövegközi: $U = R \\cdot I$ → \\(U = R \\cdot I\\)\nSzámozott:\n$$\nU = R \\cdot I\n$$ {#eq-ohm}\n\\[\nU = R \\cdot I\n\\tag{1.1}\\]\nTöbbsoros levezetés:\n$$\n\\begin{aligned}\nR_{23} &= \\frac{R_2 \\cdot R_3}{R_2 + R_3} \\\\\n       &= \\frac{20 \\cdot 20}{20 + 20} = 10\\,\\Omega\n\\end{aligned}\n$$ {#eq-r23}\n\\[\n\\begin{aligned}\nR_{23} &= \\frac{R_2 \\cdot R_3}{R_2 + R_3} \\\\\n       &= \\frac{20 \\cdot 20}{20 + 20} = 10\\,\\Omega\n\\end{aligned}\n\\tag{1.2}\\]\n\n\n\nForrás\nJelentés\n\n\n\n\n\\frac{a}{b}\ntört\n\n\nR_{23}, R_\\text{e}\nalsó index\n\n\nx^{2}\nfelső index\n\n\n\\sqrt{x}\ngyök\n\n\n\\cdot\nszorzás\n\n\n10\\,\\Omega\nszám + mértékegység\n\n\n2{,}5\ntizedesvessző\n\n\n\\underline{U}\nkomplex mennyiség\n\n\n\\mathrm{j}\nképzetes egység",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Segédlet</span>"
+    ]
+  },
+  {
+    "objectID": "segedlet.html#feladat-és-megoldás",
+    "href": "segedlet.html#feladat-és-megoldás",
+    "title": "1  Segédlet",
+    "section": "1.6 Feladat és megoldás",
+    "text": "1.6 Feladat és megoldás\n::: {#exr-minta}\nMekkora az áram, ha $U = 10\\,\\text{V}$ és $R = 5\\,\\Omega$?\n:::\n\n::: {.callout-tip collapse=\"true\"}\n## Megoldás\nAz [-@eq-ohm]. egyenlet alapján: $I = U / R = 2\\,\\text{A}$\n:::\n\nFeladat 1.1 Mekkora az áram, ha \\(U = 10\\,\\text{V}\\) és \\(R = 5\\,\\Omega\\)?\n\n\n\n\n\n\n\nTipMegoldás\n\n\n\n\n\nAz 1.1. egyenlet alapján: \\(I = U / R = 2\\,\\text{A}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Segédlet</span>"
+    ]
+  },
+  {
+    "objectID": "segedlet.html#hivatkozások",
+    "href": "segedlet.html#hivatkozások",
+    "title": "1  Segédlet",
+    "section": "1.7 Hivatkozások",
+    "text": "1.7 Hivatkozások\n\n\n\nMire\nCímke\nHivatkozás\nCsak a szám\n\n\n\n\nFejezet, szakasz\n{#sec-nev}\n@sec-nev\n[-@sec-nev]\n\n\nÁbra\n{#fig-nev}\n@fig-nev\n[-@fig-nev]\n\n\nTáblázat\n{#tbl-nev}\n@tbl-nev\n[-@tbl-nev]\n\n\nEgyenlet\n{#eq-nev}\n@eq-nev\n[-@eq-nev]\n\n\nFeladat\n{#exr-nev}\n@exr-nev\n[-@exr-nev]\n\n\n\nOhm törvénye: @eq-ohm. Az [-@fig-minta]. ábra egy ellenállást mutat.\nLásd még: @exr-minta és @sec-segedlet.\nOhm törvénye: Equation 1.1. Az 1.1. ábra egy ellenállást mutat. Lásd még: Feladat 1.1 és Chapter 1.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Segédlet</span>"
+    ]
+  },
+  {
+    "objectID": "1_5_feladat.html",
+    "href": "1_5_feladat.html",
+    "title": "1.5. feladat",
+    "section": "",
+    "text": "Határozza meg a lineáris rezisztív hálózat \\(U_{ki}\\) feszültségét!\n\n\n\n\n\n\n\nTipMegoldás\n\n\n\n\n\n\\[\n    U_{ki} = 80~V\n\\tag{1}\\]\n\n\n\n\n\n\n\n\n\nNoteLevezetés\n\n\n\n\n\n\nlépés: Felrajzoljuk az \\(U_{ki}\\) feszültség meghatározásához szükséges hurkot.\n A huroktörvény alapján:\n\\[\n     -U_{ki} + U_3 + U_4 = 0 \\\\\n     átrendezve: \\\\\n     U_{ki} = U_3 + U_4\n  \\tag{2}\\]\nTehát nekünk az \\(U_3\\) és \\(U_4\\) feszültségeket kell meghatároznunk, hogy megkapjuk az \\(U_{ki}\\) feszültséget.\nlépés: Mivel az U_{ki} irányába áram nem folyik, ezért egyértelműek a soros és párhuzamos viszonyok. Ha kiszámoljuk az \\(R_1\\), \\(R_2\\) és \\(R_3\\) ellenállások eredőjét, akkor feszültségosztó segítségével meghatározhatjuk az \\(U_4\\) feszültséget.\n\nÍgy az \\(R_1\\), \\(R_2\\) és \\(R_3\\) ellenállások eredője: \\[\n     R_{1,2,3} = (R_1 + R_2) \\times R_3 \\\\\n     R_{1,2,3} = (100 + 100) \\times 100 \\\\\n     R_{1,2,3} = 66.67~\\Omega \\\\\n  \\tag{3}\\]\nAz \\(R_{1,2,3}\\) ellenállást visszahelyettesítve az alábbi kapcsolást kapjuk:\n\nA feszültségosztó alapján: \\[\n     U_4 = \\frac{R_4}{R_{1,2,3} + R_4} \\cdot U \\\\\n     U_4 = \\frac{100~\\Omega}{66.67~\\Omega + 100~\\Omega} \\cdot 100~V = 60~V\n  \\tag{4}\\]\nlépés: Az \\(U_{1,2,3}\\) feszültséget a huroktörvény segítségével számolhatjuk ki: \\[\n     -U_4 - U_{1,2,3} + U = 0 \\\\\n     átrendezve: \\\\\n     U_{1,2,3} = U - U_4 \\\\\n     U_{1,2,3} = 100~V - 60~V = 40~V\n\\tag{5}\\]\nlépés: Ismerjük mekkora feszültség esik az \\(R_{1,3}\\) és \\(R_2\\) ellenállásokon, illetve a feszültségforrással táplált hálózat esetén a nem keresett párhuzamos hálózatrészek elhanyagolhatók, így az \\(R_3\\) ellenállás feszültségét az alábbi feszültségosztó adja meg:\n\nA feszültségosztó alapján: \\[\n     U_3 = \\frac{R_3}{R_1 + R_3} \\cdot U_{1,2,3} \\\\\n     U_3 = \\frac{100~\\Omega}{100~\\Omega + 100~\\Omega} \\cdot 40~V = 20~V\n  \\tag{6}\\]\nlépés: Visszahelyettesítve az 2. egyenletbe: \\[\n     U_{ki} = U_3 + U_4 \\\\\n     U_{ki} = 20~V + 60~V = 80~V\n  \\tag{7}\\]",
+    "crumbs": [
+      "1.5. feladat"
+    ]
+  }
+]
