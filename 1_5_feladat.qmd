@@ -1,0 +1,83 @@
+# 1.5. feladat {#sec:1_5_feladat .unnumbered}
+
+Határozza meg a lineáris rezisztív hálózat $U_{ki}$ feszültségét!
+
+<!-- A feladat ábrája
+![1.5. Feladat](abrak/){#fig-1_5_1 width=50%}
+-->
+
+::: {.callout-tip collapse="true"}
+## Megoldás
+$$
+    U_{ki} = 80~V
+$$ {#eq-1_5_m}
+:::
+
+::: {.callout-note collapse="true"}
+## Levezetés
+1. lépés: Felrajzoljuk az $U_{ki}$ feszültség meghatározásához szükséges hurkot.
+   
+    <!-- Az első hurok
+    ![1.5. Az $U_{ki}$ feszültség hurokja](abrak/){#fig-1_5_2 width=50%}
+    -->
+    A huroktörvény alapján:
+
+    $$
+        -U_{ki} + U_3 + U_4 = 0 \\
+        átrendezve: \\
+        U_{ki} = U_3 + U_4
+    $$ {#eq-1_5_l1}
+
+    Tehát nekünk az $U_3$ és $U_4$ feszültségeket kell meghatároznunk, hogy megkapjuk az $U_{ki}$ feszültséget.
+
+2. lépés: Mivel az U_{ki} irányába áram nem folyik, ezért egyértelműek a soros és párhuzamos viszonyok. Ha kiszámoljuk az $R_1$, $R_2$ és $R_3$ ellenállások eredőjét, akkor feszültségosztó segítségével meghatározhatjuk az $U_4$ feszültséget.
+   
+    <!-- Kis ábra az $R_1$, $R_2$ és $R_3$ ellenállások kapcsolatáról
+    ![1.5. A 3 ellenállás kapcsolata](abrak/){#fig-1_5_3 width=50%}
+    -->
+
+    Így az $R_1$, $R_2$ és $R_3$ ellenállások eredője:
+    $$
+        R_{1,2,3} = (R_1 + R_2) \times R_3 \\
+        R_{1,2,3} = (100 + 100) \times 100 \\
+        R_{1,2,3} = 66.67~\Omega \\
+    $$ {#eq-1_5_l2}
+
+    Az $R_{1,2,3}$ ellenállást visszahelyettesítve az alábbi kapcsolást kapjuk:
+    
+    <!-- Egyszerűsített ábra ahol $R_{1,2,3}$ és $R_4$ egy sima feszültségosztót alkot 
+    ![1.5. Egyszerűsített ábra](abrak/){#fig-1_5_4 width=50%}
+    -->
+
+    A feszültségosztó alapján:
+    $$
+        U_4 = \frac{R_4}{R_{1,2,3} + R_4} \cdot U \\
+        U_4 = \frac{100~\Omega}{66.67~\Omega + 100~\Omega} \cdot 100~V = 60~V
+    $$ {#eq-1_5_l3}
+
+3. lépés: Az $U_{1,2,3}$ feszültséget a huroktörvény segítségével számolhatjuk ki:
+   $$
+        -U_4 - U_{1,2,3} + U = 0 \\
+        átrendezve: \\
+        U_{1,2,3} = U - U_4 \\
+        U_{1,2,3} = 100~V - 60~V = 40~V
+   $$ {#eq-1_5_l4}
+
+4. lépés: Ismerjük mekkora feszültség esik az $R_{1,3}$ és $R_2$ ellenállásokon, illetve a feszültségforrással táplált hálózat esetén a nem keresett párhuzamos hálózatrészek elhanyagolhatók, így az $R_3$ ellenállás feszültségét az alábbi feszültségosztó adja meg:
+    
+    <!-- Egyszerűsített ábra ahol $R_1$ és $R_3$ egy sima feszültségosztót alkot 
+    ![1.5. $R_1$ és $R_3$ feszültségosztó](abrak/){#fig-1_5_4 width=50%}
+    -->
+
+    A feszültségosztó alapján:
+    $$
+        U_3 = \frac{R_3}{R_1 + R_3} \cdot U_{1,2,3} \\
+        U_3 = \frac{100~\Omega}{100~\Omega + 100~\Omega} \cdot 40~V = 20~V
+    $$ {#eq-1_5_l5}
+
+5. lépés: Visszahelyettesítve az [-@eq-1_5_l1]. egyenletbe:
+    $$
+        U_{ki} = U_3 + U_4 \\
+        U_{ki} = 20~V + 60~V = 80~V
+    $$ {#eq-1_5_l6}
+:::

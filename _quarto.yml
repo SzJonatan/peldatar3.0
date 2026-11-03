@@ -1,0 +1,35 @@
+project:
+  type: book
+
+lang: hu
+
+language:
+  crossref-exr-title: "Feladat"
+  crossref-exm-title: "Példa"
+
+book:
+  title: "Példatár 3.0"
+  author: "<B&J>"
+  date: today
+  chapters:
+    - index.qmd
+    - segedlet.qmd
+    - 1_5_feladat.qmd
+  downloads: [pdf]
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    number-sections: true
+  pdf:
+    documentclass: scrreprt
+    papersize: a4
+    pdf-engine: xelatex
+    fig-pos: "H"
+    number-sections: true
+
+execute:
+  echo: false
+  freeze: auto

@@ -1,0 +1,152 @@
+# Segédlet {#sec-segedlet}
+
+A példatár írásához használt formátumok. Minden elemnél előbb a forrás,
+alatta az eredmény látható.
+
+## Megjegyzés
+
+````markdown
+::: {.callout-note}
+## Megjegyzés
+A megjegyzés szövege.
+:::
+````
+
+::: {.callout-note}
+## Megjegyzés
+A megjegyzés szövege.
+:::
+
+## Lenyíló blokk
+
+````markdown
+::: {.callout-note collapse="true"}
+## Kattints a megnyitáshoz
+Rejtett tartalom, pl. a megoldás.
+:::
+````
+
+::: {.callout-note collapse="true"}
+## Kattints a megnyitáshoz
+Rejtett tartalom, pl. a megoldás.
+:::
+
+## Piros blokk
+
+````markdown
+::: {.callout-important}
+## Fontos
+Piros keretes, kiemelt figyelmeztetés.
+:::
+````
+
+::: {.callout-important}
+## Fontos
+Piros keretes, kiemelt figyelmeztetés.
+:::
+
+További színek:
+
+| Osztály | Szín |
+|:--------|:-----|
+| `.callout-note` | kék |
+| `.callout-tip` | zöld |
+| `.callout-warning` | sárga |
+| `.callout-caution` | narancs |
+| `.callout-important` | piros |
+
+Bármelyik lehet lenyíló: `{.callout-important collapse="true"}`
+
+## SVG ábra
+
+````markdown
+![Ellenállás kapcsolási jele](abrak/minta.svg){#fig-minta width=50%}
+````
+
+![Ellenállás kapcsolási jele](abrak/minta.svg){#fig-minta width=50%}
+
+## Egyenletek
+
+Szövegközi: `$U = R \cdot I$` → $U = R \cdot I$
+
+Számozott:
+
+````markdown
+$$
+U = R \cdot I
+$$ {#eq-ohm}
+````
+
+$$
+U = R \cdot I
+$$ {#eq-ohm}
+
+Többsoros levezetés:
+
+````markdown
+$$
+\begin{aligned}
+R_{23} &= \frac{R_2 \cdot R_3}{R_2 + R_3} \\
+       &= \frac{20 \cdot 20}{20 + 20} = 10\,\Omega
+\end{aligned}
+$$ {#eq-r23}
+````
+
+$$
+\begin{aligned}
+R_{23} &= \frac{R_2 \cdot R_3}{R_2 + R_3} \\
+       &= \frac{20 \cdot 20}{20 + 20} = 10\,\Omega
+\end{aligned}
+$$ {#eq-r23}
+
+| Forrás | Jelentés |
+|:-------|:---------|
+| `\frac{a}{b}` | tört |
+| `R_{23}`, `R_\text{e}` | alsó index |
+| `x^{2}` | felső index |
+| `\sqrt{x}` | gyök |
+| `\cdot` | szorzás |
+| `10\,\Omega` | szám + mértékegység |
+| `2{,}5` | tizedesvessző |
+| `\underline{U}` | komplex mennyiség |
+| `\mathrm{j}` | képzetes egység |
+
+## Feladat és megoldás
+
+````markdown
+::: {#exr-minta}
+Mekkora az áram, ha $U = 10\,\text{V}$ és $R = 5\,\Omega$?
+:::
+
+::: {.callout-tip collapse="true"}
+## Megoldás
+Az [-@eq-ohm]. egyenlet alapján: $I = U / R = 2\,\text{A}$
+:::
+````
+
+::: {#exr-minta}
+Mekkora az áram, ha $U = 10\,\text{V}$ és $R = 5\,\Omega$?
+:::
+
+::: {.callout-tip collapse="true"}
+## Megoldás
+Az [-@eq-ohm]. egyenlet alapján: $I = U / R = 2\,\text{A}$
+:::
+
+## Hivatkozások
+
+| Mire | Címke | Hivatkozás | Csak a szám |
+|:-----|:------|:-----------|:------------|
+| Fejezet, szakasz | `{#sec-nev}` | `@sec-nev` | `[-@sec-nev]` |
+| Ábra | `{#fig-nev}` | `@fig-nev` | `[-@fig-nev]` |
+| Táblázat | `{#tbl-nev}` | `@tbl-nev` | `[-@tbl-nev]` |
+| Egyenlet | `{#eq-nev}` | `@eq-nev` | `[-@eq-nev]` |
+| Feladat | `{#exr-nev}` | `@exr-nev` | `[-@exr-nev]` |
+
+````markdown
+Ohm törvénye: @eq-ohm. Az [-@fig-minta]. ábra egy ellenállást mutat.
+Lásd még: @exr-minta és @sec-segedlet.
+````
+
+Ohm törvénye: @eq-ohm. Az [-@fig-minta]. ábra egy ellenállást mutat.
+Lásd még: @exr-minta és @sec-segedlet.

@@ -1,0 +1,3 @@
+# Előszó {.unnumbered}
+
+A Példatár 3.0 kidolgozott feladatokat tartalmaz teljes levezetéssel.
